@@ -60,9 +60,9 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/username/numl"
-Repository = "https://github.com/username/numl"
-Issues = "https://github.com/username/numl/issues"
+Homepage = "https://github.com/KarIes-ss/numl"
+Repository = "https://github.com/KarIes-ss/numl"
+Issues = "https://github.com/KarIes-ss/numl/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
