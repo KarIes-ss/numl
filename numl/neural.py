@@ -355,6 +355,6 @@ class MNISTNeuralNetwork:
                      xytext=(-40, -20), textcoords="offset points",
                      color="#1D9E75", fontweight="bold")
 
-        plt.suptitle("Кривые обучения NeuralNetwork", fontsize=12)
+        plt.suptitle("Кривые обучения MNISTNeuralNetwork", fontsize=12)
         plt.tight_layout()
         plt.show()
