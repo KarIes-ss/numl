@@ -164,7 +164,7 @@ print(f"Accuracy = {model.score(X_test, y_test):.4f}")
 from numl import NeuralNetwork
 
 # Ожидается X нормализованный в [0, 1], y ∈ {0, …, 9}
-model = NeuralNetwork(hidden1=128, hidden2=64, lr=0.01, epochs=20)
+model = MNISTNeuralNetwork(hidden1=128, hidden2=64, lr=0.01, epochs=20)
 model.fit(X_train, y_train)
 model.plot_history()
 
