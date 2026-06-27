@@ -4,7 +4,7 @@
 > Написана с целью закрепить теорию на практике.
 
 ```
-from numl import LinearRegression, LogisticRegression, MNISTNeuralNetwork
+LinearRegression · LogisticRegression · MNISTNeuralNetwork
 ```
 
 ---
@@ -17,7 +17,7 @@ numl/
 │   ├── base.py        # BaseModel: цикл SGD, ранняя остановка
 │   ├── linear.py      # LinearRegression (SGD / GD / normal equation)
 │   ├── logistic.py    # LogisticRegression (SGD / GD)
-│   ├── neural.py      # NeuralNetwork 784→128→64→10 (backprop)
+│   ├── neural.py      # MNISTNeuralNetwork 784→128→64→10 (backprop)
 │   └── __init__.py
 ├── tests/
 │   ├── test_linear.py    # 22 теста
@@ -115,7 +115,7 @@ pip install -r requirements.txt
 ```
 
 ```python
-from numl import LinearRegression, LogisticRegression, NeuralNetwork
+from numl import LinearRegression, LogisticRegression, MNISTNeuralNetwork
 ```
 
 ### LinearRegression
@@ -158,10 +158,10 @@ labels = model.predict_class(X_test)  # метки {0, 1}
 print(f"Accuracy = {model.score(X_test, y_test):.4f}")
 ```
 
-### NeuralNetwork
+### MNISTNeuralNetwork
 
 ```python
-from numl import NeuralNetwork
+from numl import MNISTNeuralNetwork
 
 # Ожидается X нормализованный в [0, 1], y ∈ {0, …, 9}
 model = MNISTNeuralNetwork(hidden1=128, hidden2=64, lr=0.01, epochs=20)
@@ -234,7 +234,7 @@ def _compute_loss(self, y, y_pred): ...  # BCE / MSE
 |---------|--------|---------|----------|
 | California Housing | `LinearRegression (norm_eq)` | R² | ~0.606 |
 | Breast Cancer Wisconsin | `LogisticRegression (sgd)` | Accuracy | ~0.982 |
-| MNIST | `NeuralNetwork (128→64)` | Accuracy | ~0.970 |
+| MNIST | `MNISTNeuralNetwork (128→64)` | Accuracy | ~0.970 |
 
 ---
 
