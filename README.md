@@ -4,7 +4,7 @@
 > Написана с целью закрепить теорию на практике.
 
 ```
-LinearRegression · LogisticRegression · NeuralNetwork
+from numl import LinearRegression, LogisticRegression, MNISTNeuralNetwork
 ```
 
 ---
