@@ -7,6 +7,20 @@
 LinearRegression · LogisticRegression · MNISTNeuralNetwork
 ```
 
+## Установка
+
+```bash
+pip install numl
+```
+
+Или клонировать репозиторий для разработки:
+
+```bash
+git clone https://github.com/KarIes-ss/numl.git
+cd numl
+pip install -r requirements.txt
+```
+
 ---
 
 ## Структура проекта
@@ -107,12 +121,6 @@ $$\mathbf{W}^{[l]} \sim \mathcal{N}\!\left(0,\ \frac{2}{n^{[l-1]}}\right)$$
 ---
 
 ## Быстрый старт
-
-```bash
-git clone https://github.com/KarIes-ss/numl.git
-cd numl
-pip install -r requirements.txt
-```
 
 ```python
 from numl import LinearRegression, LogisticRegression, MNISTNeuralNetwork
